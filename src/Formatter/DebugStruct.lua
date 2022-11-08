@@ -9,12 +9,18 @@ local function loadOrNot()
     end
 end
 
-function DebugStruct.new(fmt)
+function DebugStruct.new(name, fmt)
     loadOrNot()
-    return setmetatable({
+
+    local self setmetatable({
         fmt = fmt,
         hasFields = false,
     }, DebugStruct)
+
+    self.fmt:writeStr(name)
+    self.fmt:_pushIndent()
+
+    return self
 end
 
 function DebugStruct:field(name, value)
