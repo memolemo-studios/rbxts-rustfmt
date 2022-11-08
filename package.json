@@ -1,6 +1,6 @@
 {
     "name": "@memolemo-studios/rustfmt",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "Partial implementation of Rust's std::fmt formatter in roblox-ts",
     "main": "out/init.lua",
     "scripts": {
