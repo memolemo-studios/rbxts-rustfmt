@@ -1,0 +1,10 @@
+[package]
+name = "memothelemo/rustfmt"
+author = "memothelemo (https://github.com/memothelemo)"
+repo = "https://github.com/memolemo-studios/rustfmt"
+license = "MIT"
+version = "1.0.4"
+registry = "https://github.com/UpliftGames/wally-index"
+realm = "shared"
+exclude = ["**"]
+include = ["out", "wally.toml", "wally.lock", "default.project.json"]
